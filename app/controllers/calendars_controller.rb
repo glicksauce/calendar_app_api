@@ -10,7 +10,7 @@ class CalendarsController < ApplicationController
 
   # GET /calendars/1
   def show
-    render json: @calendar
+    render json: @calendar.to_json(include: :photos)
   end
 
   # POST /calendars
@@ -41,7 +41,7 @@ class CalendarsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_calendar
-      @calendar = Calendar.find(params[:id])
+      @calendar = Calendar.find(params[:calendar_date])
     end
 
     # Only allow a trusted parameter "white list" through.

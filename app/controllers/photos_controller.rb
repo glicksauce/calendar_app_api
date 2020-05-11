@@ -1,5 +1,5 @@
 class PhotosController < ApplicationController
-  before_action :set_photo, only: [:show, :update, :destroy]
+  # before_action :set_photo, only: [:show, :update, :destroy]
 
   # GET /photos
   def index
@@ -35,14 +35,15 @@ class PhotosController < ApplicationController
 
   # DELETE /photos/1
   def destroy
+    @photo = Photo.find(params[:id])
     @photo.destroy
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_photo
-      @photo = Photo.find(params[:id])
-    end
+    # def set_photo
+    #   @photo = Photo.find(params[:id])
+    # end
 
     # Only allow a trusted parameter "white list" through.
     def photo_params

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_10_035423) do
+ActiveRecord::Schema.define(version: 2020_05_11_015020) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2020_05_10_035423) do
     t.string "img_src"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "journal_entry"
   end
 
 end
