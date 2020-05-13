@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
 seedDate = '2020-Jan-01'.to_date
 
 while seedDate <= '2020-12-31'.to_date
@@ -22,5 +24,4 @@ Photo.create([
     { img_date: '2020-May-14'.to_date, img_src: "https://toggl.com/blog/wp-content/uploads/2014/12/01-excited-programmer-comic.png", journal_entry "pumped to start working on my final project"}
     { img_date: '2020-May-28'.to_date, img_src: "https://communityimpact.com/uploads/images/2020/05/08/56133.jpg", journal_entry "Graduating GA today, bittersweet"}
 ])
-
 
