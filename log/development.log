@@ -36581,3 +36581,797 @@ Processing by CalendarsController#show as */*
 Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
 
 
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mCalendar Create (2.5ms)[0m  [1m[32mINSERT INTO "calendars" ("calendar_date", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "calendar_date"[0m  [["calendar_date", "2020-01-01"], ["created_at", "2020-05-13 22:02:37.309026"], ["updated_at", "2020-05-13 22:02:37.309026"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:13
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 18:21:19 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jgman/.rbenv/versions/2.5.5/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 24ms (Views: 0.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/calendars/2020-05-07" for ::1 at 2020-05-13 18:21:24 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-07"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-07"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-07"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 18:21:26 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/calendars/2020-05-12" for ::1 at 2020-05-13 18:21:31 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-12"}
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-12"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-12"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:24:01 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.6ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:24:24 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/calendars/2020-05-07" for ::1 at 2020-05-13 19:24:46 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-07"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-07"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-07"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-08" for ::1 at 2020-05-13 19:24:59 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-08"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-08"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-08"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-07" for ::1 at 2020-05-13 19:25:12 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-07"}
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-07"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-07"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:25:13 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 19:29:17 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:29:19 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-07" for ::1 at 2020-05-13 19:29:24 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-07"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-07"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-07"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 19:29:25 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-08" for ::1 at 2020-05-13 19:29:26 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-08"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-08"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-08"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:29:26 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/calendars/2020-05-07" for ::1 at 2020-05-13 19:29:27 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-07"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-07"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-07"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:29:31 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-16" for ::1 at 2020-05-13 19:29:33 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-16"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-16"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-16"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-09" for ::1 at 2020-05-13 19:29:34 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-09"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-09"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-09"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 19:29:34 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.1ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-08" for ::1 at 2020-05-13 19:29:35 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-08"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-08"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-08"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-23" for ::1 at 2020-05-13 19:29:36 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-23"}
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-23"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-23"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/calendars/2020-05-21" for ::1 at 2020-05-13 19:29:38 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-21"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-21"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-21"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-20" for ::1 at 2020-05-13 19:29:39 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-20"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-20"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-20"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-28" for ::1 at 2020-05-13 19:29:40 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-28"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-28"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-28"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-21" for ::1 at 2020-05-13 19:29:41 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-21"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-21"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-21"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:29:41 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 19:29:42 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-22" for ::1 at 2020-05-13 19:29:42 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-22"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-22"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-22"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-20" for ::1 at 2020-05-13 19:29:44 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-20"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-20"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-20"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-04-29" for ::1 at 2020-05-13 19:29:46 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-04-29"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-04-29"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-04-29"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/photos" for ::1 at 2020-05-13 19:30:22 -0400
+Processing by PhotosController#create as HTML
+  Parameters: {"img_date"=>"2020-04-29", "img_src"=>"https://www.fbca.org/wp-content/uploads/2019/04/tacotuesday-logo-02-e1557439594518-1024x622.jpg", "journal_entry"=>"Taco Tuesday", "photo"=>{"img_date"=>"2020-04-29", "img_src"=>"https://www.fbca.org/wp-content/uploads/2019/04/tacotuesday-logo-02-e1557439594518-1024x622.jpg", "journal_entry"=>"Taco Tuesday"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/photos_controller.rb:20
+  [1m[36mCalendar Load (0.5ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-04-29"], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:20
+  [1m[36mPhoto Create (1.2ms)[0m  [1m[32mINSERT INTO "photos" ("img_date", "img_src", "created_at", "updated_at", "journal_entry") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["img_date", "2020-04-29"], ["img_src", "https://www.fbca.org/wp-content/uploads/2019/04/tacotuesday-logo-02-e1557439594518-1024x622.jpg"], ["created_at", "2020-05-13 23:30:22.165790"], ["updated_at", "2020-05-13 23:30:22.165790"], ["journal_entry", "Taco Tuesday"]]
+  ↳ app/controllers/photos_controller.rb:20
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/photos_controller.rb:20
+Completed 201 Created in 20ms (Views: 1.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/calendars/2020-04-28" for ::1 at 2020-05-13 19:32:14 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-04-28"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-04-28"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-04-28"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-04-29" for ::1 at 2020-05-13 19:32:15 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-04-29"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-04-29"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-04-29"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/photos/5" for ::1 at 2020-05-13 19:32:27 -0400
+Processing by PhotosController#update as HTML
+  Parameters: {"img_date"=>"2020-04-29", "img_src"=>"https://www.fbca.org/wp-content/uploads/2019/04/tacotuesday-logo-02-e1557439594518-1024x622.jpg", "journal_entry"=>"Taco Wednesday?", "id"=>"5", "photo"=>{"img_date"=>"2020-04-29", "img_src"=>"https://www.fbca.org/wp-content/uploads/2019/04/tacotuesday-logo-02-e1557439594518-1024x622.jpg", "journal_entry"=>"Taco Wednesday?"}}
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:45
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/photos_controller.rb:29
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-04-29"], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:29
+  [1m[36mPhoto Update (0.5ms)[0m  [1m[33mUPDATE "photos" SET "journal_entry" = $1, "updated_at" = $2 WHERE "photos"."id" = $3[0m  [["journal_entry", "Taco Wednesday?"], ["updated_at", "2020-05-13 23:32:27.912210"], ["id", 5]]
+  ↳ app/controllers/photos_controller.rb:29
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/photos_controller.rb:29
+Completed 200 OK in 23ms (Views: 0.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 19:33:50 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-13" for ::1 at 2020-05-13 19:33:51 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-13"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-13"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-13"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:33:53 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-13" for ::1 at 2020-05-13 19:33:54 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-13"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-13"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-13"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:35:46 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 19:36:16 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:36:20 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-08" for ::1 at 2020-05-13 19:36:47 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-08"}
+  [1m[36mCalendar Load (0.6ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-08"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-08"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 19:36:50 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:36:50 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 19:37:37 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-08" for ::1 at 2020-05-13 19:37:38 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-08"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-08"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.5ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-08"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:37:39 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 19:38:01 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/calendars/2020-05-19" for ::1 at 2020-05-13 19:38:01 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-19"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-19"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-19"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-04-29" for ::1 at 2020-05-13 19:38:03 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-04-29"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-04-29"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-04-29"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/photos/5" for ::1 at 2020-05-13 19:38:04 -0400
+Processing by PhotosController#destroy as HTML
+  Parameters: {"id"=>"5", "photo"=>{}}
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT  "photos".* FROM "photos" WHERE "photos"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/photos_controller.rb:38
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/photos_controller.rb:39
+  [1m[36mPhoto Destroy (0.2ms)[0m  [1m[31mDELETE FROM "photos" WHERE "photos"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/photos_controller.rb:39
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/photos_controller.rb:39
+Completed 204 No Content in 5ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/calendars/2020-04-29" for ::1 at 2020-05-13 19:38:07 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-04-29"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-04-29"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-04-29"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-26" for ::1 at 2020-05-13 19:38:10 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-26"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-26"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.4ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-26"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/calendars/2020-05-27" for ::1 at 2020-05-13 19:38:11 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-27"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-27"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-27"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-28" for ::1 at 2020-05-13 19:38:11 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-28"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-28"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-28"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-28" for ::1 at 2020-05-13 19:38:13 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-28"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-28"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-28"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-04-29" for ::1 at 2020-05-13 19:38:14 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-04-29"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-04-29"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-04-29"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-01" for ::1 at 2020-05-13 19:38:15 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-01"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-01"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-01"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:39:03 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-13" for ::1 at 2020-05-13 19:39:04 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-13"}
+  [1m[36mCalendar Load (0.4ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-13"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-13"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/calendars/2020-05-13" for ::1 at 2020-05-13 19:39:11 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-13"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-13"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-13"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 19:39:12 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-16" for ::1 at 2020-05-13 19:39:13 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-16"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-16"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-16"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-15" for ::1 at 2020-05-13 19:39:14 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-15"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-15"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-15"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:39:15 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-13" for ::1 at 2020-05-13 19:39:19 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-13"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-13"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-13"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/calendars/2020-05-07" for ::1 at 2020-05-13 19:39:22 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-07"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-07"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-07"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:39:30 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-07" for ::1 at 2020-05-13 19:39:31 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-07"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-07"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-07"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:39:31 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/calendars/2020-05-13" for ::1 at 2020-05-13 19:39:35 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-13"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-13"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-13"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-20" for ::1 at 2020-05-13 19:40:44 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-20"}
+  [1m[36mCalendar Load (0.2ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-20"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-20"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/calendars/2020-05-14" for ::1 at 2020-05-13 19:40:46 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-14"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-14"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-14"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/calendars/2020-05-13" for ::1 at 2020-05-13 19:50:26 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-13"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-13"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-13"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/calendars/2020-05-12" for ::1 at 2020-05-13 19:51:04 -0400
+Processing by CalendarsController#show as */*
+  Parameters: {"calendar_date"=>"2020-05-12"}
+  [1m[36mCalendar Load (0.3ms)[0m  [1m[34mSELECT  "calendars".* FROM "calendars" WHERE "calendars"."calendar_date" = $1 LIMIT $2[0m  [["calendar_date", "2020-05-12"], ["LIMIT", 1]]
+  ↳ app/controllers/calendars_controller.rb:44
+  [1m[36mPhoto Load (0.3ms)[0m  [1m[34mSELECT "photos".* FROM "photos" WHERE "photos"."img_date" = $1[0m  [["img_date", "2020-05-12"]]
+  ↳ app/controllers/calendars_controller.rb:13
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
